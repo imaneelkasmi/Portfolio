@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+  }
+  
+  /* navbar */
+  
+  #sticky-nav {
+    overflow: hidden;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    border-bottom:4px solid #eece1a;
+    padding-bottom:10px
+      }
+  #navbarSupportedContent{
+    font-size: 20px;
+  }
+  #navbarSupportedContent a:hover {
+      color:   #eece1a;
+  }
+  
+  .profile-page .page-header {
+    height: 380px;
+    background-position:center;
+  }
+  .page-header {
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    -webkit-filter: opacity(.6);
+    filter: opacity(.6);
+  }
+  body {
+    background: black;
+    color: #fff;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5; }
+    body#bg-img {
+      background: url(img/Background.jpg);
+      background-attachment: fixed;
+      background-size: cover;
+     }
+      body#bg-img:after {
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba(27, 27, 27, 0.808); 
+      }
+  
+    /* large heading */
+
+  h1,
+  h2,
+  h3 {
+    margin:0;
+    font-weight: 400; }
+    h1.lg-heading,
+    h2.lg-heading,
+    h3.lg-heading {
+      font-size: 6rem; 
+      margin-top: 20px;
+    }
+
+    /* small heading */
+
+    h1.sm-heading,
+    h2.sm-heading,
+    h3.sm-heading {
+      margin-bottom: 2rem;
+      margin-top: 8px;
+     }
+  
+  a {
+    color: #fff;
+    text-decoration: none; }
+  
+  header {
+    position: fixed;
+    z-index: 2;
+    width: 100%; }
+  
+  .text-secondary {
+    color: #eece1a !important; 
+  }
+  
+  main {
+    padding: 4rem;
+    min-height: calc(100vh - 60px); }
+    main .icons {
+      margin-top: 1rem; }
+      main .icons a {
+        padding: 0.4rem; }
+        main .icons a:hover {
+          color: #eece1a;
+          transition: all 0.5s ease-out; }
+    main#home {
+      overflow: hidden; }
+      main#home h1 {
+        margin-top: 20vh; }
+
+  /* about-section */
+
+  .about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  /* about-image */
+
+    .about-info .bio-image {
+      grid-area: bioimage;
+      margin: auto;
+      border-radius: 50%;
+      border: #eece1a 3px solid;
+     }
+
+     /* about job sections */
+
+    .about-info .bio {
+      grid-area: bio;
+      font-size: 1.5rem; 
+    }
+    .about-info .job-1 {
+      grid-area: job1; 
+    }
+    .about-info .job-2 {
+      grid-area: job2; 
+    }
+    .about-info .job-3 {
+      grid-area: job3;
+     }
+
+     /* les trois sections de jobs style */
+
+    .about-info .job {
+      background: black;
+      padding: 0.5rem;
+      border-bottom: #eece1a 5px solid; }
+  
+  
+  .btn, .btn-dark, .btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem; }
+    .btn:hover, .btn-dark:hover, .btn-light:hover {
+      background: #eece1a;
+     }
+  
+  .btn-dark {
+    background: black;
+    color: #fff; }
+  
+  .btn-light {
+    background: #c4c4c4;
+    color: #333; 
+  }
+  /* footer */
+  #main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #111;
+    color: #fff;
+    height: 60px; }
+  
+  @media screen and (min-width: 1171px) {
+    .projects {
+      grid-template-columns: repeat(4, 1fr); } }
+  
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    .projects {
+      grid-template-columns: repeat(3, 1fr); } }
+  
+  @media screen and (max-width: 768px) {
+    main {
+      align-items: center;
+      text-align: center; }
+      main .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem; }
+    .about-info {
+      grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+      grid-template-columns: 1fr; }
+    .projects {
+      grid-template-columns: repeat(2, 1fr); } }
+  
+  @media screen and (max-width: 500px) {
+    main {
+      padding: 2rem; }
+      main #home h1 {
+        margin-top: 10vh; }
+      main .lg-heading {
+        margin-top: 1rem;
+        font-size: 5rem; }
+    .projects {
+      grid-template-columns: 1fr; } }
+
+      
+      /* contact- form */
+
+#contact{
+  margin-bottom: -30px;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #eece1a;
+    border-width: 1px;
+  }
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 15px 0;
+    border: 0;
+    background: #111;
+    padding: 15px 40px;
+    outline: none;
+    color: #ddd;
+  }
+  .contact-form-text:hover{
+    box-shadow: 0 0 5px 2px #eece1a;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  
+/* progress bar */
+
+.myProgress {
+    position: absolute;
+    left: 20%;
+    width: 54%;
+    background-color: rgba(17, 17, 17, 0.233);
+    }
+    .skills{
+      margin-left: 80px;
+    }
+    .myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #eece1a;
+    }
+
+  /* erreur-404 */
+
+  #page404{
+    background-color: #111;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:  200px;
+  }
+  h1{
+    margin-top: -50px;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 200px;
+  }
+  h2{
+    margin-top: 40px;
+  }
+  .erreur-404-p{
+    font-size: 30px;
+  }
+  .button{
+    margin: auto;
+  }
+
+ /* btn download */
+
+ .download-btn{
+   padding-top: 20px;
+ }
+ 
+ /* footer */
+#footer{
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+}
+#main-footer{
+text-decoration: none;
+
+}
+.footer-text a:hover{
+  color: #eece1a !important;
+}
+
+/* projects card */
+.articls-box {
+  background-color: #eece1ac4 !important;
+}
+.card-title{
+  font-size: 20px !important;
+}
+ #projects-title {
+   margin-left: 80px;
+ }

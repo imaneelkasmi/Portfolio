@@ -1,8 +1,42 @@
 <?php
    $lang = array(
-        
-
-    "about" => "about",
-  
-
+    "index-title" => "Welcome To My Portfolio",
+    "Imane" => "Imane",
+    "EL kasmi" => "EL kasmi",
+    "metier*" => "Web Developer/Designer",
+    "Download" => "Download CV",
+    "title-projects" => "My projects",
+    "projects" => "Projects",
+    "Let me" => "Let me show you a few things...",
+    "contact-title" => "Contact Me",
+    "Contact**" => "Contact ",
+    "Me" => "Me",
+    "phrase-contact" => "This is how you can reach me...",
+    "Send" => "Send",
+    "about me" => "About me",
+    "home" => "Home",
+    "about" => "About",
+    "projects" => " Projects",
+    "Contact" => "Contact",
+    "part1" => "About",
+    "part2" => "Me",
+    "phrase1" => "Let me tell you a few things...",
+    "para1" => "My name Is Imane, I'm a beginner web developer and designer, and ready for new opportunities. I am a very passionate person, fast learner, hard worker and team player.",
+    "para2" => "I am familiar with HTML, CSS, Bootstrap, Flexbox, Javascript, jQuery, PHP, SQL, Github,adobe illustrator and Photoshop.",
+    "para3" => "A bit about me: I love music, the arts, tech and all things creative.",
+    "metier1" => "Front End Developer",
+    "desc1" => "I'm using technologies releated to front end developing as html, Css3 and Javascript and thier frameworks.",
+    "metier2" => "BACK END Developer",
+    "desc2" => "building a website require a good set of skills cocerning server side technologies too, and I have a knowledge when it come to SQL, PHP and python.",
+    "metier3" => "Designer",
+    "desc3" => "I use Adobe Creative Suit for graphic design in order to take the idea from the abstract phase to the concret one.",
+    "My" => "My",
+    "Skills" => "Skills",
+    "technologies" => "This is The Technologies that i use...",
+    "english" => "English",
+    "french" => "French",
+    "thank you" => "Thank you",
+    "modal-text" => "the file has been downloaded succesfully",
+    "close" => "Close",
    );
+   ?>
